@@ -1,11 +1,15 @@
 import java.awt.Menu;
 
 public class Kafe14 {
-    public static void Menu(String namaPelanggan, boolean isMember) {
+    public static void Menu(String namaPelanggan, String kodePromo) {
         System.out.println("Selamat datang, " +namaPelanggan +"!");
 
-        if (isMember){
-            System.out.println("Anda adalah member, dapatkan diskons 10% untuk setiap pembelian!");
+        if (kodePromo.equalsIgnoreCase("DISKON50")){
+            System.out.println("Promo: Diskon 50%");
+        } else if (kodePromo.equalsIgnoreCase("DISKON30")){
+            System.out.println("Promo: Diskon 30%");
+        } else {
+            System.out.println("Kode promo tidak valid!");
         }
 
         System.out.println("===== MENU RESTO KAFE =====");
@@ -20,7 +24,7 @@ public class Kafe14 {
     }
 
     public static void main(String[] args) {
-        Menu("Andi", true);
+        Menu("Andi", "DISKON50");
     }
 }
 
