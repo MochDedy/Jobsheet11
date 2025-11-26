@@ -14,8 +14,8 @@ public class Kafe14 {
         System.out.println("Silahkan pilih menu yang Anda inginkan.");
     }
 
-    public static int hitungTotalHarga14(int pilihanMenu, int banyakItem){
-        int[] hargaItems = {15000, 20000, 22000, 12000, 10000, 18000};
+    public static int hitungTotalHarga14(int pilihanMenu, int banyakItem) {
+        int[] hargaItems = { 15000, 20000, 22000, 12000, 10000, 18000 };
 
         int hargaTotal = hargaItems[pilihanMenu - 1] * banyakItem;
         return hargaTotal;
@@ -32,8 +32,7 @@ public class Kafe14 {
 
         int totalHarga = hitungTotalHarga14(pilihanMenu, banyakItem);
 
-        System.out.println("Total harga untuk pesanan anda adalah: Rp." +totalHarga);
+        System.out.println("Total harga untuk pesanan anda adalah: Rp." + totalHarga);
 
     }
 }
-
